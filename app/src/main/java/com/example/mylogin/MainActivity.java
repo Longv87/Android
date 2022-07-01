@@ -1,7 +1,9 @@
 package com.example.mylogin;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.mylogin.ui.login.LoginActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_Anmelden) {
-            return true;
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
         }
 
 
